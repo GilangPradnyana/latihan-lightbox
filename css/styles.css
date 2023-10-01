@@ -18,9 +18,9 @@ body {
 /* Header */
 h1 {
   text-align: center;
-  margin: 30px 0px;
+  margin: 50px 0px;
   font-size: 70px;
-  text-shadow: 4px 5px 5px black, -2px -2px 5px black;
+  text-shadow: 8px 7px 5px black, -2px -2px 5px black;
   color: #ddd;
 }
 
@@ -31,7 +31,7 @@ h1 {
   padding: 20px;
   border: 1px solid grey;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px 0px rgba(134, 132, 132,0.7),-1px -1px 0px 0px rgba(134, 132, 132,0.7) ;
+  box-shadow: 1px 1px 3px 2px rgba(53, 52, 52, 0.7),-1px -1px 3px 2px rgba(134, 132, 132,0.7) ;
 }
 
 /* Border Radius */
@@ -43,27 +43,29 @@ h1 {
   width: 120px;
   height: 120px;
   float: left;
-  margin: 10px 10px 10px 17px ;
+  margin: 10px 6px 10px 15px ;
   /* overflow: hidden; */
   position: relative;
+  border: 3px solid grey;
 }
+
 .gallery li span {
   display: block;
   width: 120px;
   height: 120px;
   top: 0;
+  background-color:rgb(200,200,200,0.5) ;
   position: absolute;
   line-height: 120px;
   text-align: center;
-  color: #e8dfdf;
-  text-shadow: 1px 1px 1px #666 ;
+  text-shadow: 1px 1px 1px ;
+  color: #333;
   opacity: 0;
   transition: 800ms;
 }
 .gallery li span:hover {
+  opacity: 1;
   transform: scale(1) rotate(360deg);
-  opacity: .60;
-  background-color: #666;
 }
 
 
