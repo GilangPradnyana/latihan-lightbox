@@ -31,5 +31,43 @@ h1 {
   padding: 20px;
   border: 1px solid grey;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px 0px rgba(134, 132, 132,0.7),-1px -1px 0px 0px rgba(134, 132, 132,0.7) ;x
+  box-shadow: 1px 1px 2px 0px rgba(134, 132, 132,0.7),-1px -1px 0px 0px rgba(134, 132, 132,0.7) ;
+}
+
+/* Border Radius */
+.gallery li, .gallery li span, .gallery li img {
+  border-radius: 50%;
+} 
+/* Lightbox */
+.gallery li {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin: 10px 10px 10px 17px ;
+  /* overflow: hidden; */
+  position: relative;
+}
+.gallery li span {
+  display: block;
+  width: 120px;
+  height: 120px;
+  top: 0;
+  position: absolute;
+  line-height: 120px;
+  text-align: center;
+  color: #e8dfdf;
+  text-shadow: 1px 1px 1px #666 ;
+  opacity: 0;
+  transition: 800ms;
+}
+.gallery li span:hover {
+  transform: scale(1) rotate(360deg);
+  opacity: .60;
+  background-color: #666;
+}
+
+
+/* clear */
+.clear {
+  clear: both;
 }
