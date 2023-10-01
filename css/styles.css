@@ -1,0 +1,15 @@
+/* setup fontface*/
+
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+       url('../fonts/bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+/* Style utama */
+body {
+  font: 18px/36px 'bebas_neueregular' ;
+}
